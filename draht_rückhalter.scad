@@ -1,0 +1,19 @@
+union(){
+    cube([35,34,7]);
+    translate([10,-8,0]){
+        difference(){
+            cube([7,8,7]);
+            translate([3.5,4,0]){
+                cylinder(7,d=3.2,$fn=16);
+            }
+        }
+    }
+    translate([10,34,0]){
+        difference(){
+            cube([7,8,7]);
+            translate([3.5,4,0]){
+                cylinder(7,d=3.2,$fn=16);
+            }
+        }
+    }
+}
